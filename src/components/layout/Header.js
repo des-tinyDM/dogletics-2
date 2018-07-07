@@ -5,11 +5,13 @@ import logo from "../../assets/bclogo.png";
 import { StyledHeader } from "../styled/Containers";
 import { connect } from "react-redux";
 import { addToCart, getCart } from "../../ducks/cartReducer";
+import './Header.css'
 
 const Header = props => {
   console.log(props);
   return (
-    <StyledHeader>
+    <div>
+
       <div className="logoContainer">
         <img src={logo} />
       </div>
@@ -58,7 +60,8 @@ const Header = props => {
             )}
         </Link>
       </nav>
-    </StyledHeader>
+    </div>
+
   );
 };
 const mapStateToProps = state => {
