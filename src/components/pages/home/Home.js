@@ -108,15 +108,15 @@ class Home extends Component {
       );
     });
     return (
-      <PageContainer>
+      <div>
         {/* <h1 className="sectionTitle">Hot Items</h1>
         <div>list of items here</div> */}
-        <InventorySection>
+        <div>
           <div className="invHeader">
             <h1 className="sectionTitle">By Category</h1>
             <div className="options">{categoryOptions}</div>
           </div>
-          <Inventory id="sports">
+          <div id="sports">
             {this.props.sportInventory &&
               this.props.sportInventory.map((product, index) => {
                 return (
@@ -135,9 +135,9 @@ class Home extends Component {
                   />
                 );
               })}
-          </Inventory>
-        </InventorySection>
-        <InventorySection>
+          </div>
+        </div>
+        <div>
           <div className="invHeader">
             <h1 className="sectionTitle">All Inventory</h1>
             <div className="options">
@@ -169,7 +169,7 @@ class Home extends Component {
               </h3>
             </div>
           </div>
-          <Inventory>
+          <div>
             <button onClick={e => this.offsetBack(e)}>
               <i className="fas fa-chevron-circle-left offsets" />
             </button>
@@ -197,9 +197,9 @@ class Home extends Component {
             <button onClick={e => this.offsetForward(e)}>
               <i className="fas fa-chevron-circle-right offsets" />
             </button>
-          </Inventory>
-        </InventorySection>
-      </PageContainer>
+          </div>
+        </div>
+      </div>
     );
   }
 }
@@ -229,69 +229,6 @@ export default connect(
   }
 )(Home);
 
-const InventorySection = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+const InventorySection = styled.div``
 
-  & .invHeader {
-    padding: 0vh 5vw;
-    height: 5vh;
-    max-width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
-    background: black;
-    color: white;
-    & h1 {
-      font-size: 6rem;
-    }
-    & h3 {
-      font-size: 3rem;
-      text-transform: capitalize;
-      &.current {
-        text-decoration: underline;
-      }
-    }
-    & .options {
-      display: flex;
-      flex-direction: row;
-      width: 60vh;
-      justify-content: space-between;
-      /* padding:0 10vw 0 0; */
-    }
-  }
-  & div {
-    /* display: flex;
-    flex-direction: column; */
-
-    & .Header {
-      width: 100vw;
-    }
-  }
-`;
-
-const Inventory = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2vh 0;
-  flex-wrap: wrap;
-
-  & button {
-    align-self:center;
-  }
-
-  & .invDisplay {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2vh 0;
-    flex-wrap: wrap;
-    width:95%;
-  }
-`;
+const Inventory = styled.div``

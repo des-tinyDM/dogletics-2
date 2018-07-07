@@ -22,14 +22,14 @@ const Product = props => {
           <h1>{props.company}</h1>
           <h2>{props.name}</h2>
           <p>${props.price}</p>
-          <Buttons>
-            <Link to={`/product/${props.productid}`}>
-              <button>More info</button>
-            </Link>
-            <button onClick={() => props.addToCart(props.productid, 1)}>
-              Add to Card
+
+          <Link to={`/product/${props.productid}`}>
+            <button>More info</button>
+          </Link>
+          <button onClick={() => props.addToCart(props.productid, 1)}>
+            Add to Card
             </button>
-          </Buttons>
+
         </div>
       </div>
     </ProductCard>
@@ -40,7 +40,8 @@ export default Product;
 
 const ProductCard = styled.div`
   box-sizing: border-box;
-  width: 18vw;
+  max-height:20vh;
+  max-width: 15vw;
   margin: 2vh 1vw;
   display: flex;
   flex-direction: column;
@@ -57,16 +58,16 @@ const ProductCard = styled.div`
     position: relative;
   }
 
-  & .productMainImage {
+  & img.productMainImage {
     /* box-sizing: border-box; */
     background: white;
     display: block;
+    width:100%;
   }
   & .descContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
     position: relative;
     flex-basis: 1;
     color: #2b2639;
@@ -93,7 +94,7 @@ const ProductCard = styled.div`
     width: 100%;
   }
   & p {
-    margin: 0.5vh 0;
+    margin: 0.25vh 0;
     font-size: 3rem;
   }
   & img {
@@ -103,25 +104,6 @@ const ProductCard = styled.div`
     vertical-align: center;
 
     &:hover {
-    }
-  }
-`;
-const Buttons = styled.div`
-  margin: 1vh auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  & button {
-    width: 45%;
-    padding: 1vh 2vw;
-    background: #2b2639;
-    color: #eeeff1;
-  }
-  & a {
-    width: 45%;
-    & button {
-      width: 100%;
-      padding: 1vh 2vw;
     }
   }
 `;
