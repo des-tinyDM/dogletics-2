@@ -10,7 +10,6 @@ import { getCart, addToCart } from "../../../ducks/cartReducer";
 import Swal from "sweetalert2";
 import Product from "./Product";
 import styled from "styled-components";
-import { PageContainer } from "../../styled/Containers";
 
 class Home extends Component {
   constructor(props) {
