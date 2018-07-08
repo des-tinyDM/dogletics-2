@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
   font-family: "Archivo Narrow", sans-serif; 
 }
 
@@ -18,8 +17,4 @@ h6 {
 
 p , button, a {
   font-family: "Archivo Narrow", sans-serif; 
-=======
-  font-family: sans-serif;
-  font-size:12px;
->>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3
 }

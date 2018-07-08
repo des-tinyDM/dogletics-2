@@ -95,11 +95,7 @@ const ProductCard = styled.div`
   }
   & p {
     margin: 0.25vh 0;
-<<<<<<< HEAD
     font-size: 12px;
-=======
-    font-size: 3rem;
->>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3
   }
   & img {
     max-width: 18vw;
@@ -111,7 +107,6 @@ const ProductCard = styled.div`
     }
   }
 `;
-<<<<<<< HEAD
 const Buttons = styled.div`
   margin: 1vh auto;
   width: 100%;
@@ -134,5 +129,3 @@ const Buttons = styled.div`
     }
   }
 `;
-=======
->>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3

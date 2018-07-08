@@ -228,7 +228,6 @@ export default connect(
   }
 )(Home);
 
-<<<<<<< HEAD
 const InventorySection = styled.div`
   display: flex;
   flex-direction: column;
@@ -283,8 +282,4 @@ const Inventory = styled.div`
   align-items: center;
   margin: 2vh 0;
   flex-wrap: wrap;
-=======
-const InventorySection = styled.div``
->>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3
-
-const Inventory = styled.div``
+`
