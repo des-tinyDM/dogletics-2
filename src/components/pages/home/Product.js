@@ -22,14 +22,14 @@ const Product = props => {
           <h1>{props.company}</h1>
           <h2>{props.name}</h2>
           <p>${props.price}</p>
-          <Buttons>
-            <Link to={`/product/${props.productid}`}>
-              <button>More info</button>
-            </Link>
-            <button onClick={() => props.addToCart(props.productid, 1)}>
-              Add to Card
+
+          <Link to={`/product/${props.productid}`}>
+            <button>More info</button>
+          </Link>
+          <button onClick={() => props.addToCart(props.productid, 1)}>
+            Add to Card
             </button>
-          </Buttons>
+
         </div>
       </div>
     </ProductCard>
@@ -40,7 +40,8 @@ export default Product;
 
 const ProductCard = styled.div`
   box-sizing: border-box;
-  width: 18vw;
+  max-height:20vh;
+  max-width: 15vw;
   margin: 2vh 1vw;
   display: flex;
   flex-direction: column;
@@ -57,16 +58,16 @@ const ProductCard = styled.div`
     position: relative;
   }
 
-  & .productMainImage {
+  & img.productMainImage {
     /* box-sizing: border-box; */
     background: white;
     display: block;
+    width:100%;
   }
   & .descContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
     position: relative;
     flex-basis: 1;
     color: #2b2639;
@@ -94,7 +95,11 @@ const ProductCard = styled.div`
   }
   & p {
     margin: 0.25vh 0;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 3rem;
+>>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3
   }
   & img {
     max-width: 18vw;
@@ -106,6 +111,7 @@ const ProductCard = styled.div`
     }
   }
 `;
+<<<<<<< HEAD
 const Buttons = styled.div`
   margin: 1vh auto;
   width: 100%;
@@ -128,3 +134,5 @@ const Buttons = styled.div`
     }
   }
 `;
+=======
+>>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3

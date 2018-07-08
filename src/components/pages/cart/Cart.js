@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styled from "styled-components";
-import { PageContainer } from "../../styled/Containers";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 import Checkout from "../../../Checkout";
 import { updateQuantity } from "../../../ducks/cartReducer";
+import styled from 'styled-components'
 
 class CartPage extends Component {
   constructor(props) {
@@ -29,7 +28,7 @@ class CartPage extends Component {
 
     let total = (parseInt(subtotal) + parseInt(shipping)).toFixed(2);
     return (
-      <PageContainer>
+      <div>
         {!this.props.cart[0] && (
           <NoCart>
             <img src="https://78.media.tumblr.com/deabdebe4f853945a286ad8a1a45caff/tumblr_nhrm6y5lWv1r8enowo1_500.jpg" />
@@ -90,7 +89,7 @@ class CartPage extends Component {
             </tfoot>
           </Cart>
         )}
-      </PageContainer>
+      </div>
     );
   }
 }

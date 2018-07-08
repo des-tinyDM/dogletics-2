@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { PageContainer } from "../../styled/Containers";
 import { connect } from "react-redux";
 import { getSportInfo } from "../../../ducks/miscReducer";
 
@@ -36,7 +35,7 @@ class DogSports extends Component {
       console.log(info, currentSport);
     }
     return (
-      <PageContainer id="sportspage">
+      <div id="sportspage">
         <div className="sportInfo">
           <h1>Canine Sports</h1>
           <p className="sportsBlurb">
@@ -104,7 +103,7 @@ class DogSports extends Component {
             {info.img_desc && info.img_desc[photoIndex]}
           </div>
         </div>
-      </PageContainer>
+      </div>
     );
   }
 }

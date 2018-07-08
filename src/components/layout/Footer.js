@@ -1,10 +1,9 @@
 import React from "react";
-import { FooterContainer } from "../styled/Containers";
 import { NavLink as Link } from "react-router-dom";
 
 const Footer = props => {
   return (
-    <FooterContainer>
+    <div>
       <div className="one">
         <h1>Customer Care</h1>
         <a>Shipping Info</a>
@@ -59,7 +58,7 @@ const Footer = props => {
           <p>This is a demo site and not intended for commercial use.</p>
         </div>
       </div>
-    </FooterContainer>
+    </div>
   );
 };
 

@@ -10,7 +10,6 @@ import { getCart, addToCart } from "../../../ducks/cartReducer";
 import Swal from "sweetalert2";
 import Product from "./Product";
 import styled from "styled-components";
-import { PageContainer } from "../../styled/Containers";
 
 class Home extends Component {
   constructor(props) {
@@ -108,15 +107,15 @@ class Home extends Component {
       );
     });
     return (
-      <PageContainer>
+      <div>
         {/* <h1 className="sectionTitle">Hot Items</h1>
         <div>list of items here</div> */}
-        <InventorySection>
+        <div>
           <div className="invHeader">
             <h1 className="sectionTitle">By Category</h1>
             <div className="options1">{categoryOptions}</div>
           </div>
-          <Inventory id="sports">
+          <div id="sports">
             {this.props.sportInventory &&
               this.props.sportInventory.map((product, index) => {
                 return (
@@ -135,9 +134,9 @@ class Home extends Component {
                   />
                 );
               })}
-          </Inventory>
-        </InventorySection>
-        <InventorySection>
+          </div>
+        </div>
+        <div>
           <div className="invHeader">
             <h1 className="sectionTitle">All Inventory</h1>
             <div className="options2">
@@ -169,7 +168,7 @@ class Home extends Component {
               </h3>
             </div>
           </div>
-          <Inventory>
+          <div>
             <button onClick={e => this.offsetBack(e)}>
               <i className="fas fa-chevron-circle-left offsets" />
             </button>
@@ -197,9 +196,9 @@ class Home extends Component {
             <button onClick={e => this.offsetForward(e)}>
               <i className="fas fa-chevron-circle-right offsets" />
             </button>
-          </Inventory>
-        </InventorySection>
-      </PageContainer>
+          </div>
+        </div>
+      </div>
     );
   }
 }
@@ -229,6 +228,7 @@ export default connect(
   }
 )(Home);
 
+<<<<<<< HEAD
 const InventorySection = styled.div`
   display: flex;
   flex-direction: column;
@@ -283,18 +283,8 @@ const Inventory = styled.div`
   align-items: center;
   margin: 2vh 0;
   flex-wrap: wrap;
+=======
+const InventorySection = styled.div``
+>>>>>>> 2f00dabfc4b10d77fe79046fde9d73901c0fafc3
 
-  & button {
-    align-self:center;
-  }
-
-  & .invDisplay {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2vh 0;
-    flex-wrap: wrap;
-    width:95%;
-  }
-`;
+const Inventory = styled.div``
