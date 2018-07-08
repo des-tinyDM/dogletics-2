@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { PageContainer } from "../../styled/Containers";
 import { connect } from "react-redux";
 import { getUser } from "../../../ducks/userReducer";
 import { getOrders } from "../../../ducks/cartReducer";
@@ -48,7 +47,7 @@ class Orders extends Component {
       });
     console.log(this.props);
     return (
-      <PageContainer>
+      <div>
         {this.props.user &&
           this.props.user.id && (
             <div>
@@ -96,7 +95,7 @@ class Orders extends Component {
             </a>
           </NoUser>
         )}
-      </PageContainer>
+      </div>
     );
   }
 }

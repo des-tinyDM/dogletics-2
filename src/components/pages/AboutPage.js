@@ -1,5 +1,4 @@
 import React from "react";
-import { PageContainer } from "../styled/Containers";
 import styled from "styled-components";
 
 const photoarr = [
@@ -16,7 +15,7 @@ const photoarr = [
 ];
 
 const AboutPage = () => (
-  <PageContainer>
+  <div>
     <Disclaimer>
       <h1>
         Dogletics was developed as a personal portfolio project, and is not
@@ -36,7 +35,7 @@ const AboutPage = () => (
         cart, pay for their items and see a summary of their past orders.
       </p>
     </Disclaimer>
-  </PageContainer>
+  </div>
 );
 export default AboutPage;
 
