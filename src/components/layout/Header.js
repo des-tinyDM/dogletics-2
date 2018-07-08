@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../assets/bclogo.png";
-import { StyledHeader } from "../styled/Containers";
 import { connect } from "react-redux";
 import { addToCart, getCart } from "../../ducks/cartReducer";
 import './Header.css'
