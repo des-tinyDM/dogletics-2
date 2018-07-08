@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styled from "styled-components";
-import { PageContainer } from "../../styled/Containers";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 import Checkout from "../../../Checkout";
 import { updateQuantity } from "../../../ducks/cartReducer";
+import styled from 'styled-components'
 
 class CartPage extends Component {
   constructor(props) {
