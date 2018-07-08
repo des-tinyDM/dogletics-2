@@ -114,7 +114,7 @@ class Home extends Component {
         <InventorySection>
           <div className="invHeader">
             <h1 className="sectionTitle">By Category</h1>
-            <div className="options">{categoryOptions}</div>
+            <div className="options1">{categoryOptions}</div>
           </div>
           <Inventory id="sports">
             {this.props.sportInventory &&
@@ -140,7 +140,7 @@ class Home extends Component {
         <InventorySection>
           <div className="invHeader">
             <h1 className="sectionTitle">All Inventory</h1>
-            <div className="options">
+            <div className="options2">
               <h3
                 className={`option
                   ${this.state.numberDisplayed === 4 && "current"}
@@ -242,23 +242,26 @@ const InventorySection = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 24px;
+    /* font-size: 24px; */
     background: black;
     color: white;
-    & h1 {
-      font-size: 6rem;
-    }
     & h3 {
-      font-size: 3rem;
       text-transform: capitalize;
       &.current {
         text-decoration: underline;
       }
     }
-    & .options {
+    & .options1 {
       display: flex;
       flex-direction: row;
-      width: 60vh;
+      width: 50vw;
+      justify-content: space-between;
+      /* padding:0 10vw 0 0; */
+    }
+    & .options2 {
+      display: flex;
+      flex-direction: row;
+      width: 25vw;
       justify-content: space-between;
       /* padding:0 10vw 0 0; */
     }

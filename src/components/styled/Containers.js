@@ -12,10 +12,10 @@ export const PageContainer = styled.div`
     & div.sportInfo {
       border-right: 1px solid lightgrey;
       width: 45vw;
-      margin: 5vh 0vw 1vh 2vw;
-      padding: 0 2vw 0 0;
+      margin: 5vh auto 1vh auto;
+      padding: 0 4vw 0 0;
       height: 72vh;
-      font-size: 2rem;
+      font-size: 12px;
       text-align: center;
       & > p.sportsBlurb {
         padding: 0 5vw;
@@ -34,14 +34,14 @@ export const PageContainer = styled.div`
         justify-content: space-between;
         text-align: center;
         & h2 {
-          font-size: 3rem;
+          font-size: 24px;
         }
 
         & h2:hover {
           text-decoration: underline;
         }
         & h2.active {
-          font-size: 6rem;
+          font-size: 20px;
           text-decoration: underline;
         }
       }
@@ -89,12 +89,12 @@ export const PageContainer = styled.div`
     }
 
     & p {
-      font-size: 2rem;
+      font-size: 12px;
       text-align: start;
       text-indent: 2rem;
     }
     & h1 {
-      font-size: 5rem;
+      font-size: 24px;
       margin: 1vh 0;
       /* text-align: start; */
     }
@@ -110,18 +110,26 @@ export const FooterContainer = styled.div`
     justify-content: space-around;
     width: 100vw;
     margin: 2vh 0;
-    padding: 4vh 0 2vh 0;
+    padding: 4vh 0 4vh 0;
     text-align: start;
+    overflow-x:hidden;
     /* & div {
       padding: 0 2vw;
     } */
+    & p {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size:18px;
+    }
     & .one {
-      width: 15%;
+      width: 10%;
+      margin-left:2.5vw;
       display: flex;
       flex-direction: column;
 
       & a {
-        font-size: 24px;
+        font-size: 12px;
         margin: 0.5vh 0;
       }
       & :first-child {
@@ -129,12 +137,12 @@ export const FooterContainer = styled.div`
       }
     }
     & .two {
-      width: 7%;
+      width: 10%;
       display: flex;
       flex-direction: column;
 
       & a {
-        font-size: 24px;
+        font-size: 12px;
         margin: 0.5vh 0;
       }
       & :first-child {
@@ -147,7 +155,7 @@ export const FooterContainer = styled.div`
       flex-direction: column;
 
       & a {
-        font-size: 24px;
+        font-size: 12px;
         margin: 0.5vh 0;
       }
       & :first-child {
@@ -188,15 +196,15 @@ export const FooterContainer = styled.div`
       
       & .icons {
         width:20vw;
-        font-size: 56px;
+        font-size: 36px;
         justify-content:space-between;
         & * {
           margin: 0 0.5vw 1vh 0;
           color: black;
-          font-size: 24px;
+          font-size: 12px;
         }
         & svg {
-          font-size:4rem;
+          font-size:2rem;
         }
       }
 
@@ -208,7 +216,7 @@ export const FooterContainer = styled.div`
         align-items:flex-start;
 
         & p {
-          font-size: 24px;
+          font-size: 12px;
         }
 
       & div.policies {
@@ -230,6 +238,13 @@ export const StyledHeader = styled.div`
     border-bottom: 1px solid lightgrey;
     align-items: center;
     height: 12vh;
+& a {
+  font-size:20px;
+}
+    & .logoContainer img {
+      height:10vh;
+      margin-left:5vw;
+    }
     & nav {
       width: 20vw;
       display: flex;
@@ -237,16 +252,16 @@ export const StyledHeader = styled.div`
       align-items: center;
       height: 10vh;
       padding: 1vw 2vw 1vw 5vw;
+      font-size: 20px;
 
-      & img {
-      height: 100%;
-      }
+
+      
       & .navlink {
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 6vw;
-        font-size: 48px;
+
         text-decoration: none;
         color: black;
 
@@ -263,6 +278,8 @@ export const StyledHeader = styled.div`
           margin-left: 0.5vw;
           justify-content: center;
           width: 4vw;
+          font-size: 20px;
+
           &:hover,
           :active {
             text-decoration: none;
@@ -270,7 +287,7 @@ export const StyledHeader = styled.div`
         }
         & svg {
           margin: 0 1vw;
-          font-size:36px;
+
 
         }
       }
@@ -287,7 +304,7 @@ export const StyledHeader = styled.div`
         align-items: center;
         justify-content: center;
         width: 10vw;
-        font-size: 48px;
+
         text-decoration: none;
         color: black;
         &:hover {
@@ -296,8 +313,6 @@ export const StyledHeader = styled.div`
 
       }
     }
-    & .logoContainer {
-      width: 20vw;
-    }
+    
   }
 `;

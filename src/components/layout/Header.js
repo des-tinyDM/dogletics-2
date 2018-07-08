@@ -39,22 +39,24 @@ const Header = props => {
           </a>
         ) : (
             <a className="navlink login" href={process.env.REACT_APP_LOGIN}>
-              <div>
-                <p>Login</p>
-              </div>
+
+
+              Login
+
+
             </a>
           )}
         <Link className="navlink cart" to="/cart">
           {/* <p>Cart</p> */}
           <i className="fas fa-shopping-cart" />
           {props.cart[0] ? (
-            <ItemsInCart>
-              <h1>{props.cart.length}</h1>
-            </ItemsInCart>
+            <div>
+              <p>{props.cart.length}</p>
+            </div>
           ) : (
-              <ItemsInCart>
-                <h1>0</h1>
-              </ItemsInCart>
+              <div>
+                <p>0</p>
+              </div>
             )}
         </Link>
       </nav>
@@ -71,22 +73,3 @@ export default connect(
   mapStateToProps,
   { addToCart }
 )(Header);
-
-const ItemsInCart = styled.div`
-        /* border: 1px solid black; */
-        height: 60px;
-        width: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 3vh;
-        right: 6.3vw;
-  & h1 {
-        height: 40px;
-      width: 40px;
-      font-size: 48px;
-      align-self: center;
-      line-height: 40px;
-      border-radius: 50%;
-    }
-  `;

@@ -113,9 +113,12 @@ const NoCart = styled.div`
 
   & img {
     margin: 5vh auto;
-    width: 30%;
+    max-height: 60%;
   }
-
+& h1 {
+  font-size:24px;
+  margin:2vh auto
+}
   & button {
     padding: 1vh 2vw;
   }
@@ -129,12 +132,13 @@ const Cart = styled.div`
   text-align: start;
   & h1 {
     margin: 0 auto 2vh auto;
+    font-size:36px;
   }
   & thead {
     & h2 {
       text-align: start;
       margin: 1vh auto;
-      font-size: 2.5rem;
+      font-size: 24px;
       border-bottom: 1px solid lightgrey;
     }
   }
@@ -144,7 +148,7 @@ const Cart = styled.div`
     align-items: center;
   }
   & h1 {
-    font-size: 4em;
+    font-size: 36px;
   }
 
   & .colTitle {
@@ -159,7 +163,7 @@ const Cart = styled.div`
     text-align: center;
     width: 50vw;
     & p {
-      font-size: 2rem;
+      font-size: 18px;
       width: 100%;
     }
   }
@@ -176,13 +180,13 @@ const Cart = styled.div`
       width: 100%;
       display: block;
       text-align: center;
-      font-size: 2rem;
+      font-size: 18px;
       margin: 2vh auto;
     }
     & input {
       width: 100%;
       display: block;
-      font-size: 2rem;
+      font-size: 18px;
       margin: 2vh auto;
     }
     & button {
@@ -256,7 +260,7 @@ const Cart = styled.div`
     }
 
     & img {
-      width: 20vw;
+      width: 15vw;
       height: auto;
       margin: 1vh 1vw;
     }

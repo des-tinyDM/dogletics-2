@@ -134,11 +134,11 @@ const OrdersTable = styled.table`
 
 const NoUser = styled.div`
   & h1 {
-    font-size: 8em;
+    font-size: 36px;
     margin: 0 auto 1vh auto;
   }
   & p {
-    font-size: 7em;
+    font-size: 20px;
     margin: 0 auto 1vh auto;
   }
   & img {
@@ -148,6 +148,6 @@ const NoUser = styled.div`
   & button {
     margin: 3vh auto;
     padding: 1vh 2vw;
-    font-size: 4rem;
+    font-size: 20px;
   }
 `;

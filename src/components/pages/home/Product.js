@@ -82,19 +82,19 @@ const ProductCard = styled.div`
     width: 100%;
   }
   & h1 {
-    font-size: 3rem;
+    font-size: 14px;
     width: 100%;
     text-align: center;
   }
 
   & h2 {
-    font-size: 3rem;
+    font-size: 14px;
     text-align: center;
     width: 100%;
   }
   & p {
-    margin: 0.5vh 0;
-    font-size: 3rem;
+    margin: 0.25vh 0;
+    font-size: 12px;
   }
   & img {
     max-width: 18vw;
@@ -113,15 +113,18 @@ const Buttons = styled.div`
   justify-content: space-between;
   & button {
     width: 45%;
-    padding: 1vh 2vw;
+    padding: 1vh 1vw;
     background: #2b2639;
     color: #eeeff1;
+    font-size:8px;
+
   }
   & a {
     width: 45%;
     & button {
       width: 100%;
-      padding: 1vh 2vw;
+      padding: 1vh 1vw;
+      font-size:8px;
     }
   }
 `;
